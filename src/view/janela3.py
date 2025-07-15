@@ -24,7 +24,7 @@ class Janela3:
         while True:
             deseja_continuar = input('Deseja continuar? y-Sim, n-Nao: ').strip().lower()
             if deseja_continuar not in ['y', 'n', 'sim', 'nao']:
-                print("⚠️ Entrada inválida. Digite 'y' ou 'n'.")
+                print("Entrada inválida. Digite 'y' ou 'n'.")
                 continue
             break
 
@@ -42,7 +42,7 @@ class Janela3:
                 preco = float(preco_input)
                 break
             except ValueError:
-                print('⚠️ Preço inválido. Digite um número (use ponto para decimais).')
+                print('Preço inválido. Digite um número (use ponto para decimais).')
 
         tipo = input('Tipo do item: ').strip()
         descricao = input('Descrição do item: ').strip()
@@ -53,12 +53,12 @@ class Janela3:
             confirma = input('Cadastrar item (y-Sim, n-Nao): ').strip().lower()
             if confirma in ['y', 'sim']:
                 ItemControler.insert_into_item(database_name, objetoItem)
-                print('✅ Item cadastrado com sucesso!')
+                print('Item cadastrado com sucesso!')
                 break
             elif confirma in ['n', 'nao']:
                 print('Operação cancelada. Voltando ao menu...')
                 break
             else:
-                print('⚠️ Opção inválida. Digite "y" ou "n".')
+                print('Opção inválida. Digite "y" ou "n".')
 
         time.sleep(2)
