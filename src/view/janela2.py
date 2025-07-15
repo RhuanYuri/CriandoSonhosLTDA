@@ -14,7 +14,7 @@ class Janela2:
         print('------Pesquisar Pedido--------')
         q = input('Unico-1\nTodos-2\nAtualizar Estado-3\nDigite: ') 
         #verificação de entrada de índice do pedido
-+       if q=='1': 
+        if q=='1': 
             try:
                 indice = int(input('Indice do pedido: '))
             except ValueError:
